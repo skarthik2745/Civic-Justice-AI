@@ -1,37 +1,15 @@
 # 🏛️ Civic Awareness Platform
 
-A comprehensive AI-powered civic engagement platform that empowers citizens with legal awareness, civic issue reporting, complaint guidance, and rights education.
+AI-powered civic engagement platform empowering citizens with legal awareness, civic issue reporting, complaint guidance, and rights education.
 
 ![Platform Status](https://img.shields.io/badge/status-active-success)
 ![License](https://img.shields.io/badge/license-MIT-blue)
 ![React](https://img.shields.io/badge/React-18.3.1-61DAFB?logo=react)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.5.3-3178C6?logo=typescript)
 
----
-
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Technology Stack](#technology-stack)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Usage](#usage)
-- [Platform Tabs](#platform-tabs)
-- [AI Integration](#ai-integration)
-- [Database Schema](#database-schema)
-- [API Documentation](#api-documentation)
-- [Security & Privacy](#security--privacy)
-- [Contributing](#contributing)
-- [License](#license)
-
----
-
 ## 🎯 Overview
 
-The Civic Awareness Platform is a citizen-centric application designed to bridge the gap between citizens and civic authorities. It provides:
-
+Bridges the gap between citizens and civic authorities through:
 - **Legal Awareness**: Simplified legal procedures and rights information
 - **Civic Issue Reporting**: Report and track civic problems
 - **Complaint Guidance**: Step-by-step complaint filing assistance
@@ -39,522 +17,203 @@ The Civic Awareness Platform is a citizen-centric application designed to bridge
 - **Visual Reporting**: Image-based civic issue documentation
 - **AI Assistance**: Powered by Groq AI for intelligent guidance
 
-### Mission
+**Mission**: Empower citizens with accessible knowledge about their rights, responsibilities, and civic processes through responsible AI technology.
 
-To empower citizens with accessible knowledge about their rights, responsibilities, and civic processes through responsible AI technology.
-
-### SDG Alignment
-
-- **SDG 16**: Peace, Justice and Strong Institutions
-- **SDG 10**: Reduced Inequalities
-- **SDG 11**: Sustainable Cities and Communities
-
----
-
-## ✨ Features
+## ✨ Key Features
 
 ### 🏠 Home Tab
-- Welcome dashboard with platform overview
-- Quick navigation to all services
-- Important notices and disclaimers
-- Feature highlights
+- Welcome dashboard with platform overview and quick navigation
 
 ### ⚖️ Legal Guidance Tab
 - AI-powered legal query assistance
-- Category-based legal information (Police, Civic, Consumer, Safety)
-- Static information on:
-  - Types of legal issues (Civil, Criminal, Civic)
-  - Basic citizen rights
-  - Best practices for legal matters
-  - Emergency helpline numbers
-- Simple, non-technical language explanations
-- Clear disclaimers (not legal advice)
+- Category-based information (Police, Civic, Consumer, Safety)
+- Emergency helpline numbers and basic citizen rights
 
 ### 🚨 Civic Issue Reporting Tab
-- Report civic problems with detailed descriptions
-- Location-based issue tracking
+- Report civic problems with location tracking
 - AI-assisted authority identification
-- Static guidelines on:
-  - Common civic issues (garbage, roads, water, etc.)
-  - Responsible authorities by category
-  - What to include in reports
-  - Follow-up tips
 - Issue categorization (Water, Electricity, Roads, Sanitation, Safety, Pollution)
 
 ### 🛡️ Complaint Guidance Tab
-- **General Complaint Guidance**: Process explanations, escalation paths, documentation requirements
-- **AI Contact Finder**: Intelligent authority suggestion based on issue description
-- **Filterable Contact Directory**: 20+ important Indian helpline numbers
-  - 🚨 Emergency Services (112, 108, 101)
-  - 👮 Police & Law Enforcement (181, 1930, 1098, 14567)
-  - 🏙️ Civic & Municipal Services (1969, local numbers)
-  - 🧾 Consumer & Grievances (1915, 8800001915)
-  - 🧠 Mental Health & Social Support (1800-599-0019)
-- Click-to-call functionality
-- Location-aware suggestions
+- General complaint process explanations
+- AI Contact Finder for authority suggestions
+- **20+ Indian helpline numbers** with click-to-call functionality
+  - Emergency: 112, 108, 101
+  - Police: 181, 1930, 1098, 14567
+  - Civic: 1969
+  - Consumer: 1915, 8800001915
+  - Mental Health: 1800-599-0019
 
 ### 📚 Awareness & Rights Tab
-- Educational content on civic topics
-- AI-powered explanations of:
-  - Fundamental Rights
-  - Civic Duties & Responsibilities
-  - Government Services
-  - Public Participation
-  - Institutional Roles
-  - Grievance Redressal Systems
-- Static information boxes on:
-  - Fundamental Rights (Articles 14-32)
-  - Fundamental Duties
-  - Consumer Rights
-  - Right to Information (RTI)
-  - Women's Rights
-  - Legal Rights
+- AI-powered explanations of fundamental rights and civic duties
+- Static information on RTI, consumer rights, women's rights
 
-### 📸 Civic Lens Tab (NEW)
-- **Image-Based Reporting**: Upload photos of civic issues
-- **Privacy-First Design**: No personal information displayed publicly
-- **AI Authority Suggestion**: Intelligent department recommendation
-- **Visual Issue Tracking**: Card-based display of reported issues
-- **Category Color Coding**:
-  - 🟢 Green: Cleanliness/Garbage
-  - 🔵 Blue: Water/Drainage
-  - 🟡 Yellow: Electricity/Streetlights
-  - 🔴 Red: Safety Hazards
-- Supported issues: Garbage, Drainage, Roads, Streetlights, Water Leakage, Safety Hazards
+### 📸 Civic Lens Tab
+- **Image-based reporting** with privacy protection
+- AI authority suggestions
+- Category color coding (Green: Garbage, Blue: Water, Yellow: Electricity, Red: Safety)
 
 ### ℹ️ About & Ethics Tab
-- Platform mission and vision
-- SDG alignment details
-- Responsible AI principles
-- Important disclaimers
-- Ethical guidelines
-- Transparency commitments
-
----
+- Platform mission, SDG alignment, and responsible AI principles
 
 ## 🛠️ Technology Stack
 
-### Frontend
-- **React** 18.3.1 - UI framework
-- **TypeScript** 5.5.3 - Type safety
-- **Vite** 5.4.2 - Build tool
-- **Tailwind CSS** 3.4.1 - Styling
-- **Lucide React** 0.344.0 - Icons
-
-### Backend/Services
-- **Groq AI API** - AI-powered assistance (llama-3.1-8b-instant model)
-- **Supabase** 2.57.4 - Database and backend services
-
-### Development Tools
-- **ESLint** - Code linting
-- **PostCSS** - CSS processing
-- **Autoprefixer** - CSS vendor prefixes
-
----
+**Frontend**: React 18.3.1, TypeScript 5.5.3, Vite 5.4.2, Tailwind CSS 3.4.1
+**Backend**: Groq AI API (llama-3.1-8b-instant), Supabase 2.57.4
+**Tools**: ESLint, PostCSS, Autoprefixer
 
 ## 📦 Prerequisites
 
-Before you begin, ensure you have:
-
-- **Node.js** (v18 or higher)
-- **npm** or **yarn** package manager
-- **Groq API Key** (from [groq.com](https://groq.com))
-- **Supabase Account** (optional, for database features)
-- Modern web browser (Chrome, Firefox, Safari, Edge)
-
----
+- Node.js (v18+)
+- npm/yarn
+- Groq API Key ([groq.com](https://groq.com))
+- Supabase Account (optional)
+- Modern web browser
 
 ## 🚀 Installation
 
-### 1. Clone the Repository
-
 ```bash
+# Clone repository
 git clone https://github.com/yourusername/civic-awareness-platform.git
 cd civic-awareness-platform
-```
 
-### 2. Install Dependencies
-
-```bash
+# Install dependencies
 npm install
-```
 
-### 3. Environment Configuration
+# Create .env file
+echo "VITE_GROQ_API_KEY=your_groq_api_key_here" > .env
+echo "VITE_SUPABASE_URL=your_supabase_url" >> .env
+echo "VITE_SUPABASE_ANON_KEY=your_supabase_anon_key" >> .env
 
-Create a `.env` file in the project root:
-
-```env
-# Groq AI API Configuration
-VITE_GROQ_API_KEY=your_groq_api_key_here
-
-# Supabase Configuration (Optional)
-VITE_SUPABASE_URL=your_supabase_url
-VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-```
-
-### 4. Start Development Server
-
-```bash
+# Start development server
 npm run dev
-```
+# Available at http://localhost:5173
 
-The application will be available at `http://localhost:5173`
-
-### 5. Build for Production
-
-```bash
+# Build for production
 npm run build
 npm run preview
 ```
 
----
-
 ## ⚙️ Configuration
 
 ### Groq API Setup
-
-1. Visit [groq.com](https://groq.com) and create an account
-2. Generate an API key from the dashboard
-3. Add the key to your `.env` file as `VITE_GROQ_API_KEY`
-4. The platform uses the `llama-3.1-8b-instant` model
+1. Create account at [groq.com](https://groq.com)
+2. Generate API key
+3. Add to `.env` as `VITE_GROQ_API_KEY`
 
 ### Supabase Setup (Optional)
+1. Create project at [supabase.com](https://supabase.com)
+2. Run SQL schema from `complete-supabase-schema.sql`
+3. Add URL and anon key to `.env`
 
-1. Create a project at [supabase.com](https://supabase.com)
-2. Run the SQL schema from `complete-supabase-schema.sql`
-3. Add your Supabase URL and anon key to `.env`
-4. Tables created:
-   - `officials` - Government officials directory
-   - `civic_issues` - Civic complaints
-   - `legal_queries` - Legal assistance requests
-   - `complaint_guidance` - Complaint guidance logs
-   - `awareness_queries` - Rights education queries
-   - `civic_lens_reports` - Image-based reports
-   - `user_feedback` - User feedback
-   - `system_logs` - Activity tracking
-
----
+**Database Tables**: officials, civic_issues, legal_queries, complaint_guidance, awareness_queries, civic_lens_reports, user_feedback, system_logs
 
 ## 📖 Usage
 
 ### For Citizens
-
-1. **Navigate to Home**: Explore available services
-2. **Legal Guidance**: Ask legal questions in simple language
-3. **Report Issues**: Submit civic problems with location details
-4. **Find Contacts**: Use the filterable helpline directory
-5. **Learn Rights**: Educate yourself on fundamental rights
-6. **Visual Reporting**: Upload photos of civic issues via Civic Lens
+1. Navigate tabs for different services
+2. Ask legal questions in simple language
+3. Report civic issues with location details
+4. Use filterable helpline directory
+5. Learn about fundamental rights
+6. Upload photos of civic issues
 
 ### For Developers
-
 ```typescript
-// Initialize Groq Service
 import { GrokService } from './services/grokService';
 const grokService = new GrokService('your-api-key');
 
 // Get legal guidance
 const response = await grokService.getLegalGuidance(
-  'What are my rights during police questioning?',
-  'police'
+  'What are my rights during police questioning?', 'police'
 );
 
 // Categorize civic issue
 const suggestion = await grokService.categorizeCivicIssue(
-  'Broken streetlight on Main Street',
-  'Mumbai, Maharashtra'
-);
-
-// Get complaint guidance
-const guidance = await grokService.getComplaintGuidance(
-  'How do I escalate an unresolved complaint?',
-  'escalation'
+  'Broken streetlight on Main Street', 'Mumbai, Maharashtra'
 );
 ```
-
----
-
-## 🗂️ Platform Tabs
-
-### Tab Structure
-
-| Tab | Purpose | AI Enabled | Static Content |
-|-----|---------|------------|----------------|
-| Home | Dashboard & Navigation | Optional | ✅ |
-| Legal Guidance | Legal awareness | ✅ | ✅ |
-| Civic Reporting | Issue reporting | ✅ | ✅ |
-| Complaint Guidance | Complaint process | ✅ | ✅ |
-| Awareness & Rights | Rights education | ✅ | ✅ |
-| Civic Lens | Visual reporting | ✅ | ❌ |
-| About & Ethics | Platform info | ❌ | ✅ |
-
----
 
 ## 🤖 AI Integration
 
-### Groq AI Features
+**Groq AI Features**:
+1. Legal query interpretation
+2. Civic issue analysis and categorization
+3. Authority suggestion
+4. Complaint guidance
+5. Rights education
 
-The platform uses Groq AI (llama-3.1-8b-instant) for:
-
-1. **Legal Query Interpretation**: Simplifies legal procedures
-2. **Civic Issue Analysis**: Categorizes and routes complaints
-3. **Authority Suggestion**: Recommends appropriate departments
-4. **Complaint Guidance**: Provides step-by-step instructions
-5. **Rights Education**: Explains civic concepts clearly
-
-### AI Safety Measures
-
-- ✅ Never provides legal advice (informational only)
-- ✅ Never claims authority
-- ✅ Promotes lawful, peaceful action
-- ✅ Uses simple, accessible language
-- ✅ Maintains political neutrality
-- ✅ Respects user privacy
-- ✅ Markdown formatting removed from responses
-
-### System Prompts
-
-Each tab has specialized system prompts ensuring:
-- Appropriate tone and language
-- Ethical boundaries
-- Accurate categorization
-- User safety prioritization
-
----
-
-## 🗄️ Database Schema
-
-### Key Tables
-
-**officials**
-- Government officials directory
-- Verified contact information
-- Department and jurisdiction mapping
-
-**civic_issues**
-- Citizen-reported civic problems
-- Status tracking
-- Priority management
-
-**civic_lens_reports**
-- Image-based issue reports
-- AI suggestions stored
-- Privacy-protected submissions
-
-**legal_queries**
-- Legal assistance requests
-- Category and urgency tracking
-
-**complaint_guidance**
-- Complaint process inquiries
-- Contact details (optional)
-
-**awareness_queries**
-- Rights education requests
-- Topic categorization
-
----
-
-## 📡 API Documentation
-
-### GrokService Methods
-
-```typescript
-// Legal Guidance
-getLegalGuidance(query: string, category?: string): Promise<string>
-
-// Civic Issue Categorization
-categorizeCivicIssue(description: string, location?: string): Promise<string>
-
-// Complaint Guidance
-getComplaintGuidance(question: string, issueType?: string): Promise<string>
-
-// Awareness Information
-getAwarenessInfo(topic: string, question?: string): Promise<string>
-
-// Generic Message
-sendMessage(systemPrompt: string, userMessage: string): Promise<string>
-```
-
-### Response Format
-
-All AI responses are:
-- Plain text (markdown removed)
-- Concise and actionable
-- Ethically bounded
-- User-friendly language
-
----
+**AI Safety Measures**:
+- Never provides legal advice (informational only)
+- Never claims authority
+- Promotes lawful, peaceful action
+- Uses simple, accessible language
+- Maintains political neutrality
+- Respects user privacy
 
 ## 🔒 Security & Privacy
 
-### Data Protection
+**Data Protection**:
+- No personal data stored without consent
+- No conversation history retained
+- Anonymous civic reporting
+- Identity protection in Civic Lens
+- Secure API key management
 
-- ✅ No personal data stored without consent
-- ✅ No conversation history retained
-- ✅ Anonymous civic reporting
-- ✅ Identity protection in Civic Lens
-- ✅ Secure API key management
-- ✅ Environment variable configuration
+**Disclaimers**:
+- **Legal**: Provides general information only, not legal advice
+- **Authority**: No affiliation with government bodies
+- **AI**: Systems can make mistakes, verify important information
 
-### Disclaimers
+## 📡 API Methods
 
-**Legal Disclaimer**: This platform provides general informational guidance only. It does not constitute legal advice and should not be relied upon as such. Always consult qualified legal professionals for specific legal matters.
-
-**Authority Disclaimer**: We do not represent, act on behalf of, or have any affiliation with government authorities, law enforcement, or judicial bodies.
-
-**AI Disclaimer**: While we strive for accuracy, AI systems can make mistakes. Always verify important information through official channels.
-
----
-
-## 🎨 UI/UX Features
-
-### Design System
-
-- **Color Scheme**: Dark theme with blue accents
-  - Background: `#0f172a`
-  - Cards: `#1e293b`
-  - Primary: `#38bdf8`
-  - Success: `#22c55e`
-  - Warning: `#f59e0b`
-  - Danger: `#ef4444`
-
-- **Typography**: System fonts with clear hierarchy
-- **Spacing**: Consistent 8px grid system
-- **Responsive**: Mobile-first design
-- **Accessibility**: WCAG 2.1 compliant
-
-### Interactive Elements
-
-- Hover effects on buttons and cards
-- Loading states for AI processing
-- Form validation
-- Click-to-call phone numbers
-- Image upload with preview
-- Category filtering
-
----
-
-## 📊 Performance
-
-### Optimization
-
-- ✅ Code splitting with Vite
-- ✅ Lazy loading components
-- ✅ Optimized images
-- ✅ Minimal bundle size
-- ✅ Fast AI response times (5-15 seconds)
-
-### Browser Support
-
-- Chrome 90+
-- Firefox 88+
-- Safari 14+
-- Edge 90+
-
----
-
-## 🧪 Testing
-
-```bash
-# Run linter
-npm run lint
-
-# Type checking
-npm run typecheck
-
-# Build test
-npm run build
+```typescript
+// GrokService Methods
+getLegalGuidance(query: string, category?: string): Promise<string>
+categorizeCivicIssue(description: string, location?: string): Promise<string>
+getComplaintGuidance(question: string, issueType?: string): Promise<string>
+getAwarenessInfo(topic: string, question?: string): Promise<string>
+sendMessage(systemPrompt: string, userMessage: string): Promise<string>
 ```
 
----
+## 🎨 Design System
+
+**Colors**: Dark theme (#0f172a background, #1e293b cards, #38bdf8 primary)
+**Features**: Responsive design, WCAG 2.1 compliant, hover effects, loading states
+**Browser Support**: Chrome 90+, Firefox 88+, Safari 14+, Edge 90+
+
+## 🧪 Testing & Performance
+
+```bash
+npm run lint      # Code linting
+npm run typecheck # Type checking
+npm run build     # Build test
+```
+
+**Optimizations**: Code splitting, lazy loading, optimized images, fast AI responses (5-15s)
 
 ## 🤝 Contributing
 
-We welcome contributions! Please follow these steps:
+1. Fork repository
+2. Create feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add AmazingFeature'`)
+4. Push branch (`git push origin feature/AmazingFeature`)
+5. Open Pull Request
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-### Contribution Guidelines
-
-- Follow TypeScript best practices
-- Maintain consistent code style
-- Add comments for complex logic
-- Update documentation
-- Test thoroughly before submitting
-
----
-
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👥 Authors
-
-- **Development Team** - Initial work and ongoing maintenance
-
----
-
-## 🙏 Acknowledgments
-
-- Groq AI for powerful language models
-- Supabase for backend infrastructure
-- React and TypeScript communities
-- All contributors and testers
-- Citizens who inspired this platform
-
----
-
-## 📞 Support
-
-For issues, questions, or suggestions:
-
-- **GitHub Issues**: [Create an issue](https://github.com/yourusername/civic-awareness-platform/issues)
-- **Email**: support@civicplatform.example
-- **Documentation**: [Wiki](https://github.com/yourusername/civic-awareness-platform/wiki)
-
----
+**Guidelines**: Follow TypeScript best practices, maintain code style, add comments, update docs
 
 ## 🗺️ Roadmap
-
-### Upcoming Features
 
 - [ ] Multi-language support (Hindi, regional languages)
 - [ ] Voice input for accessibility
 - [ ] SMS-based reporting
 - [ ] Real-time status tracking
-- [ ] Community forums
-- [ ] Expert verification system
 - [ ] Mobile app (React Native)
 - [ ] Offline mode
-- [ ] Push notifications
-- [ ] Analytics dashboard
-
----
-
-## 📈 Version History
-
-### v1.0.0 (Current)
-- ✅ 7 functional tabs
-- ✅ Groq AI integration
-- ✅ Civic Lens visual reporting
-- ✅ Filterable contact directory
-- ✅ Comprehensive static information
-- ✅ Privacy-first design
-- ✅ Responsive UI
-
----
 
 ## 🌟 Key Highlights
 
 - **20+ Helpline Numbers** integrated
-- **6 Rights Categories** documented
 - **AI-Powered** guidance across all tabs
 - **Privacy Protected** civic reporting
 - **Image-Based** issue documentation
@@ -562,28 +221,36 @@ For issues, questions, or suggestions:
 - **Zero Personal Data** exposure
 - **Ethical AI** implementation
 
----
-
 ## 💡 Best Practices
 
-### For Users
-1. Always verify AI suggestions with official sources
-2. Keep copies of complaint numbers
-3. Follow up regularly on submissions
-4. Use emergency numbers (112) for urgent matters
-5. Provide accurate location information
+**For Users**:
+1. Verify AI suggestions with official sources
+2. Keep complaint numbers
+3. Use emergency numbers (112) for urgent matters
 
-### For Developers
+**For Developers**:
 1. Never commit API keys
 2. Use environment variables
 3. Follow TypeScript strict mode
-4. Maintain code documentation
-5. Test AI responses thoroughly
+
+## 📝 License
+
+MIT License - see [LICENSE](LICENSE) file for details.
+
+## 🙏 Acknowledgments
+
+- Groq AI for language models
+- Supabase for backend infrastructure
+- React and TypeScript communities
+- Citizens who inspired this platform
+
+## 📞 Support
+
+- **GitHub Issues**: [Create issue](https://github.com/yourusername/civic-awareness-platform/issues)
+- **Email**: support@civicplatform.example
 
 ---
 
 **Built with ❤️ for empowering citizens and strengthening democracy**
-
----
 
 *Last Updated: January 2024*
